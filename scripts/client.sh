@@ -25,7 +25,6 @@ newgrp docker
 sudo wget -q https://cab-consul.s3.us-east-2.amazonaws.com/consul
 chmod +x consul
 sudo mv consul /usr/local/bin
-chmod +x consul
 sudo mkdir -p /etc/consul.d/scripts
 
   # creating consul user
