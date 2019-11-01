@@ -1,0 +1,10 @@
+{
+  "service": {
+    "name": "noty",
+    "port": 8005,
+    "check": {
+      "args": ["curl", "-X", "GET", "http://localhost:8005/noty"],
+      "interval": "10s"
+    }
+  }
+}

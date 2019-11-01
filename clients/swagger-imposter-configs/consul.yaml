@@ -1,0 +1,142 @@
+---
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: "Swagger Mock Service"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+paths:
+  /web:
+    get:
+      description: "Mock web service"
+      produces:
+        - "application/json"
+      responses:
+        "200":
+          description: "Mock web service response"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Pet"
+          examples:
+            application/json: |-
+              [
+                {
+                  "id": 101,
+                  "name": "web"
+                }
+              ]
+  /auth:
+    get:
+      description: "Mock Auth service"
+      produces:
+        - "application/json"
+      responses:
+        "200":
+          description: "Mock Auth service"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Pet"
+          examples:
+            application/json: |-
+              [
+                {
+                  "id": 102,
+                  "name": "auth"
+                }
+              ]
+  /store:
+    get:
+      description: "Store Mock Service"
+      produces:
+        - "application/json"
+      responses:
+        "200":
+          description: "Store Mock Service Response."
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Pet"
+          examples:
+            application/json: |-
+              [
+                {
+                  "id": 102,
+                  "name": "store"
+                }
+              ]
+  /log:
+    get:
+      description: "Log Mock Service"
+      produces:
+        - "application/json"
+      responses:
+        "200":
+          description: "Log Mock Service Response."
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Pet"
+          examples:
+            application/json: |-
+              [
+                {
+                  "id": 102,
+                  "name": "log"
+                }
+              ]
+  /noty:
+    get:
+      description: "Noty Mock Service"
+      produces:
+        - "application/json"
+      responses:
+        "200":
+          description: "Noty Mock Service Response."
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Pet"
+          examples:
+            application/json: |-
+              [
+                {
+                  "id": 102,
+                  "name": "noty"
+                }
+              ]
+  /payment:
+    get:
+      description: "Payment Mock Service"
+      produces:
+        - "application/json"
+      responses:
+        "200":
+          description: "Log Mock Service Response."
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Pet"
+          examples:
+            application/json: |-
+              [
+                {
+                  "id": 102,
+                  "name": "payment"
+                }
+              ]
+definitions:
+  Pet:
+    type: "object"
+    required:
+      - "id"
+      - "name"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      name:
+        type: "string"
