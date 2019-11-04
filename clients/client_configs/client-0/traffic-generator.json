@@ -1,0 +1,20 @@
+{
+  "service": {
+    "name": "traffic-generator",
+    "port": 8007,
+    "connect": {
+      "sidecar_service": {
+        "port": 20000,
+        "proxy": {
+          "upstreams": [
+            {
+              "destination_name": "payment",
+              "local_bind_address": "127.0.0.1",
+              "local_bind_port": 8010
+            }
+          ]
+        }
+      }
+    }
+  }
+}
