@@ -68,3 +68,5 @@ server=/consul/127.0.0.1#8600
 
 sudo systemctl restart dnsmasq
 echo $dcfolder
+
+consul config write /vagrant/central_config/consul/payment-defaults.hcl
