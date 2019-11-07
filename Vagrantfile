@@ -8,7 +8,7 @@
 Vagrant.configure("2") do |config|
   # consul cluster
   clusterIPs = ["192.168.9.101", "192.168.9.102", "192.168.9.103"]
-  requiredPorts = [8300, 8301, 8302, 8400, 8500, 8501, 8502, 8600]
+  requiredPorts = [8300, 8301, 8302, 8400, 8500, 8501, 8502, 8600, 3000]
 
   clusterIPs.each_with_index do |ip, index|
 	  config.vm.define "node-#{index}" do |cs|
