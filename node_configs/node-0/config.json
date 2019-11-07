@@ -31,5 +31,9 @@
         "192.168.9.103"
       ],
     "log_level": "DEBUG",
-    "enable_central_service_config": true
+    "enable_central_service_config": true,
+    "telemetry": {
+       "dogstatsd_addr": "localhost:8125",
+       "disable_hostname": true
+    }
   }
