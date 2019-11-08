@@ -119,7 +119,6 @@ cd tmp/
 cp /vagrant/prometheus/$nodefolder/prometheus.yml .
 sudo docker run -d --network host -v $(pwd):/etc/prometheus/ --name prometheus prom/prometheus
 sudo systemctl restart telegraf
-sudo systemctl restart influxdb
 
 #Install grafana
 cd /home/vagrant
