@@ -7,7 +7,7 @@ datasources:
     database: telegraf
     user: telegraf
     password: pass
-    url: http://192.168.10.115:8086
+    url: http://influxdb.service.consul:8086
     is_default: true
     editable: true
     jsonData:
