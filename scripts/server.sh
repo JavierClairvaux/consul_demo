@@ -37,7 +37,7 @@ sudo chown --recursive consul:consul /opt/consul
 
   # CONFIGURATION
   #COPING CONFIG
-  sudo cp /vagrant/node_configs/$nodefolder/config.json /etc/consul.d
+  sudo cp /vagrant/node_configs/$nodefolder/* /etc/consul.d
 
 
   sudo chown --recursive consul:consul /etc/consul.d
