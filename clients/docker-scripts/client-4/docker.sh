@@ -8,3 +8,5 @@ sudo systemctl start influxd
 sudo apt install influxdb-client
 influx -execute "create database telegraf
 create user telegraf with password 'pass'"
+
+sudo docker run -d --network host --name influxdb-proxy javier1/consul-envoy -sidecar-for influxdb
